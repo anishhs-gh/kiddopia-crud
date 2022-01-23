@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiddopia backend demo</title>
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="static/assets/logo.svg" alt="">
+        </div>
+    </div>
+    <div class="form">
+        <form action="" onsubmit="return preventDefault()">
+            <div class="input-group">
+                <input type="text" name="name" id="name" placeholder="Name" data-id="" required>
+                <input type="text" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <label for="file">Attach file</label>
+                <input type="file" name="file" id="file" style="display: none;" onchange="choosefile(event)">
+                <input type="button" name="submit" id="submit" onclick="postdata()" value="Submit">
+                <input type="button" name="update" id="update" onclick="updatedata(this)" value="Update">
+            </div>
+        </form>
+    </div>
+    <div class="table">
+        <div class="table-title">
+            <h2>Customers</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Attached file</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+
+</html>

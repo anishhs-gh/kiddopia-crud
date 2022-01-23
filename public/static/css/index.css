@@ -1,0 +1,42 @@
+.logo { text-align: center; }
+.form {
+    margin: 20px 0 0 0;
+}
+.form form { text-align: center; }
+.input-group {
+    display: block;
+    margin: 16px 0 0 0;
+}
+.input-group input, label[for=file] {
+    padding: 12px ;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    background: #ddd;
+}
+
+.input-group input[type=button] {
+    background: #01BDE0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.input-group input[name=update] { background: #BD77EF; }
+
+.input-group input { margin: 10px 0 10px 0; }
+
+label[for=file] {
+    background: #FDCF20;
+    color: #fff;
+}
+.table { text-align: center; margin: 48px 0 0 0; overflow: auto; }
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ddd;
+    border-radius: 4px;
+}
+
+.table table > thead tr th, .table table > tbody tr td {
+    padding: 12px;
+}
